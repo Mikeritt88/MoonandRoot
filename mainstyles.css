@@ -119,12 +119,21 @@ h3 {
 h4 {
   font-size: 0.875rem;
 }
+h6 {
+  color: black;
+  position: relative;
+  text-align: center ;
+
+}
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
 
 
+  
+
+}
 
 @media screen and (min-width: 800px) {
   h1 {
@@ -248,7 +257,7 @@ nav {
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
-  cursor: pointer;
+  cursor: cr;
 }
 .nav-toggle:hover {
   color: var(--clr-secondary);
@@ -328,6 +337,7 @@ nav {
   .links a:hover {
     color: rgb(156, 116, 4);
   }
+ 
 }
 /* hero */
 header {
@@ -352,9 +362,15 @@ header {
   margin: 0 auto;
   margin-bottom: 1.25rem;
 }
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .container p {
-    max-width: 40rem;
+    max-width: 30rem;
+  }
+  .jumbotron {
+    width: 100vh
+    }
+  .footer {
+    position: ;
   }
 }
 
@@ -373,9 +389,12 @@ header {
 }
 footer {
   background: rgb(247, 242, 242);
-  padding-bottom: 0px;
-  bottom: 0%;
+  padding-bottom: 0%;
+  bottom: 50rem;
   position: static;
+  min-height: 60px;
+  height: 40%;
+
 }
 footer p {
   color: rgb(2, 2, 2);
@@ -436,9 +455,71 @@ footer p {
   padding-bottom: 10%;
 }
 #card-image {
-  height: 250px !important;
-  width: 250px !important;
-  min-height : 100%;
-  min-width : 100%
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.jumbotron {
+  background-image:url(Images/oilbanner.jpg);
+  position: relative;
+  height: 200px  ;
+  padding-top: ;
+  padding-bottom: 10%;
+  margin-bottom: 10rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  ;
+} 
+#jumbotrontext{
+  text-align: center;
+  size: bold;
+  padding-top: 5rem;
+  color: blue;
+  position: sticky;
   
 }
+/* Dropdown Button */
+.dropbtn {
+  background-color: gray;
+  color: white;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

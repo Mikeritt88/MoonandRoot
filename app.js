@@ -1,49 +1,29 @@
-
-
-// ********** close links ************
-const navToggle = document.querySelector(".nav-toggle");
-const linksContainer = document.querySelector(".links-container");
-const links = document.querySelector(".links");
-
-navToggle.addEventListener("click", function () {
-  linksContainer.classList.toggle("show-links");
-
-};
-
-
-
-
-
-
-
-// ********** smooth scroll ************
-
-const scrollLinks = document.querySelectorAll(".scroll-link");
-scrollLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    /
-    e.preventDefault();
-  
-    
-   
-    linksContainer.style.height = 0;
-  });
-});
-
-
-window.onscroll = function() {myFunction()};
-
-
-var navbar = document.getElementById();
-
-
-var sticky = navbar.offsetTop;
-
-
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+    document.getElementById("myDropdown").classList.toggle("show");
   }
-}
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+

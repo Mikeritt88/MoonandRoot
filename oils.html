@@ -43,59 +43,94 @@
                         </li>
                         <li>
                             <a href="#tours" class="scroll-link">Blog</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         </header>
-        <section id="gallery">
-            <div class="container">
-              <div class="row">
-              <div class="col-lg-4 mb-4">
-              <div class="card">
-                <img src="Images/oils.jpeg" id="card-image" class="card-img-top img-fluid">
-                
-                <div class="card-body">
-                  <h5 class="card-title">Oils</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                 <a href="oils.html" class="btn btn-outline-success btn-sm">Read More</a>
-                  
+        <div class="jumbotron jumbotron-fluid">
+            
+            
+            <h1 id="jumbotrontext">Oils</h1>
+   
+        </div>
+        <section id="oil products">
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="card">
+                  <img class="card-img" src="Images/Radical Root.jpg" id="card-image">
+                  <div class="card-img-overlay d-flex justify-content-end">
+                    <a href="#" class="card-link text-danger like">
+                      <i class="fas fa-heart"></i>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Lorem ipsum</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Lorem ipsum</h6>
+                    <p class="card-text">
+                        Lorem ipsum                      <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Quantity</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">1</a>
+                          <a href="#">1</a>
+                          <a href="#">1</a>
+                        </div>
+                      
+                      
+                    </div>
+                    <div class="buy d-flex justify-content-between align-items-center">
+                      <div class="price text-success"><h5 class="mt-4">$125</h5></div>
+                       <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                  </div>
                 </div>
-               </div>
               </div>
-              
-            <div class="col-lg-4 mb-4">
-            <div class="card">
-                
-                <img src="Images/Candle.jpeg.png" id="card-image" class="card-img-top">
-                
-                <div class="card-body">
-                  <h5 class="card-title">Non-Toxic Soy Candles</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                 <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-                
+            
+          
+
+         
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card">
+                  <img class="card-img" src="Images/Gowithyin .jpg" id="card-image">
+                  <div class="card-img-overlay d-flex justify-content-end">
+                    <a href="#" class="card-link text-danger like">
+                      <i class="fas fa-heart"></i>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Vans Sk8-Hi MTE Shoes</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Style: VA33TXRJ5</h6>
+                    <p class="card-text">
+                      The Vans All-Weather MTE Collection features footwear and apparel designed to withstand the elements whilst still looking cool.             </p>
+                    <div class="options d-flex flex-fill">
+                       <select class="custom-select mr-1">
+                          <option selected>Color</option>
+                          <option value="1">Green</option>
+                          <option value="2">Blue</option>
+                          <option value="3">Red</option>
+                      </select>
+                      <select class="custom-select ml-1">
+                          <option selected>Size</option>
+                          <option value="1">41</option>
+                          <option value="2">42</option>
+                          <option value="3">43</option>
+                      </select>
+                    </div>
+                    <div class="buy d-flex justify-content-between align-items-center">
+                      <div class="price text-success"><h5 class="mt-4">$125</h5></div>
+                       <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                  </div>
                 </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mb-4">
-              <div class="card">
-                <img src="Images/Rollers.png" id="card-image" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Rollers</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                 <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-                  
-                </div>
-               </div>
               </div>
             </div>
           </div>
-          </section>
-          
-
+</section>
         <!-- Footer -->
         <footer>
-            <footer class="text-center text-lg-start text-white min-vh-15">
+            <footer class="text-center text-lg-start min-vh-15">
 
 
                 <!-- Grid container -->
@@ -123,13 +158,19 @@
                             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                                 <h6 class="text-uppercase text-center mb-4 font-weight-bold">Products</h6>
 
-                                <a href="#" class=scroll-link> <p>Ritual Oils</p></a>
+                                <a href="#" class=scroll-link>
+                                    <p>Ritual Oils</p>
+                                </a>
 
 
-                                <a href="#" class=scroll-link><p>Candles</p></a>
+                                <a href="#" class=scroll-link>
+                                    <p>Candles</p>
+                                </a>
 
 
-                                <a href="#" class=scroll-link> <p>Rollers</p></a>
+                                <a href="#" class=scroll-link>
+                                    <p>Rollers</p>
+                                </a>
 
 
                             </div>
@@ -160,12 +201,14 @@
 
 
                                 <!-- Google -->
-                                <a class="btn btn-primary text-center btn-floating m-1" style="background-color: #bdb0b0" href="#!"
-                                    role="button"><i class="fab fa-tiktok"></i></a>
+                                <a class="btn btn-primary text-center btn-floating m-1"
+                                    style="background-color: #bdb0b0" href="#!" role="button"><i
+                                        class="fab fa-tiktok"></i></a>
 
                                 <!-- Instagram -->
-                                <a class="btn btn-primary text-center btn-floating m-1" style="background-color: #bdb0b0" href="#!"
-                                    role="button"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-primary text-center btn-floating m-1"
+                                    style="background-color: #bdb0b0" href="#!" role="button"><i
+                                        class="fab fa-instagram"></i></a>
 
                                 <!-- Linkedin -->
 
@@ -184,6 +227,8 @@
             <!-- Footer -->
             </div>
             <!-- End of .container -->
+            <!-- javascript -->
+    <script src="app.js"></script>
 </body>
 
 </html>
